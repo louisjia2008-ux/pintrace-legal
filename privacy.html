@@ -34,7 +34,7 @@
 <h2>3. 与家人或教练共享</h2>
 <p>你可以在 设置 › 账号 › 共享我的数据 中邀请家人或教练。共享使用 Apple 的 iCloud 共享（CloudKit）：数据仍然只保存在你自己的 iCloud 私有空间，由你的 Apple ID 拥有，开发者看不到。</p>
 <ul>
-  <li>被你邀请并接受的人可以看到你的全部旗迹记录（赛事、轮次、每杆、球场、球包、训练）。「可以代记」的人还能替你新增或修改记录；「只读」的人只能查看。</li>
+  <li>被你邀请并接受的人可以看到你的全部旗迹记录（赛事、轮次、每杆、球场、球包、训练）。训练部分包括训练重点、练习记录和技能测试结果，以及你在球员档案里选的青少年／成人和球技等级（对方的 App 用它算出和你一致的训练进度）。「可以代记」的人还能替你新增或修改记录；「只读」的人只能查看。</li>
   <li>你可以随时修改某人的权限、移除某人或停止共享，对方立即失去访问，对方下次打开旗迹时，设备上的副本也会被删除。对方也可以自己退出。</li>
   <li>邀请某个人需要对方的 Apple ID（手机号或邮箱），由 Apple 用来把邀请发给对方。旗迹不会公开任何人的名字：你在 App 里看到的成员是邀请时用的手机号或邮箱，或你自己起的备注名；备注名只保存在你这台设备上。</li>
   <li>共享的数据占用你的 iCloud 空间，适用 Apple 的隐私政策。</li>
@@ -55,7 +55,7 @@
 <p>旗迹只申请「添加到相册」权限，用于把你导出的记分卡图片保存到相册，不会读取你的照片。</p>
 
 <h2>7. 旗迹 Coach</h2>
-<p>复盘与训练建议由 App 内的统计规则在你的设备上计算，不使用 AI 模型。你的数据不会发送到任何服务器。</p>
+<p>复盘、训练建议和训练效果判断由 App 内的统计规则在你的设备上计算，不使用 AI 模型，也不会把数据发送到任何服务器。只有你自己使用第 8 节的问 AI 或每周回顾时，资料才会离开 App。</p>
 
 <h2>8. 问 AI</h2>
 <p>问 AI 会在你的设备上把相关数据整理成一段文字（你的问题和所选范围的统计，不含姓名、球场名和位置）。这段文字只在以下两种情况下离开 App：</p>
@@ -63,11 +63,13 @@
   <li><strong>复制或分享</strong>：你点「复制」或「分享」后，由你自己粘贴或发送给你选择的 AI 服务。</li>
   <li><strong>在 App 里问</strong>：如果你在 设置 › Coach › 问 AI · App 内回答 里填入自己的 AI 服务 key（目前支持 DeepSeek），点「在 App 里问」后，这段文字会用你的 key 从这台设备直接发送给该服务，回答显示在 App 里。第一次发送前会征得你的同意。同意之后，为了选对要带的统计，App 可能先把你的问题单独发给同一个服务一次。key 只保存在这台设备的钥匙串里，不同步到 iCloud；你可以随时删除 key 或撤回同意。</li>
 </ul>
+<p><strong>每周回顾</strong>：训练卡上的「每周回顾」按同样的两种方式工作，整理的是一份每周训练资料：训练重点、这一周的练习与技能测试结果、App 的训练效果判断和当周统计，不含姓名、球场名、位置和你写的备注。只有你点了它才会发送，App 不会自动发送。第一次发送这类训练资料前会单独征得你的同意，之前对问 AI 的同意不算在内。没有填 key 时只提供复制，由你自己粘贴给 AI。AI 给出的下一周计划只有在你点「应用」后才会保存，并且只保存在这台设备上。</p>
 <p>两种情况下，资料和回答都只在你和你选择的 AI 服务之间传递，适用该服务的隐私政策；旗迹没有服务器，不经手、不保存。旗迹不会自动把资料发送到任何地方。AI 的回答可能出错，也不会改动你的记录。</p>
 
 <h2>9. 数据的导出与删除</h2>
 <ul>
   <li>在 App 中删除赛事、轮次或球场，会同时从你的设备和 iCloud 私有空间中删除。</li>
+  <li>训练记录（训练重点、练习、技能测试）不能在 App 里逐条删除。要删除它们在 iCloud 中的副本，请按下面的方法删除旗迹在 iCloud 的数据。</li>
   <li>在 设置 › 数据 中可以导出本机数据（JSON）。</li>
   <li>删除 App 会删除本机上的全部数据。要删除 iCloud 中的副本，请前往 iOS 设置 › [你的名字] › iCloud › 管理账户储存空间，找到「旗迹」并删除数据。</li>
 </ul>
@@ -107,7 +109,7 @@
 <h2>3. Sharing with family or a coach</h2>
 <p>In Settings › Accounts › Share my data you can invite family members or a coach. Sharing uses Apple's iCloud sharing (CloudKit): the data stays in your own private iCloud storage, owned by your Apple ID, and the developer cannot see it.</p>
 <ul>
-  <li>People you invite and who accept can see all of your PinTrace records (tournaments, rounds, shots, courses, bag, practice). People who "can score for you" can also add or change records; "read-only" people can only view them.</li>
+  <li>People you invite and who accept can see all of your PinTrace records (tournaments, rounds, shots, courses, bag, practice). Practice covers your training focus, practice sessions and skill-test results, plus the junior/adult setting and playing level you chose in your player profile (their app uses these to show the same training progress you see). People who "can score for you" can also add or change records; "read-only" people can only view them.</li>
   <li>You can change someone's permission, remove someone or stop sharing at any time. They lose access immediately, and the copy on their device is deleted the next time they open PinTrace.</li>
   <li>Inviting someone needs their Apple ID (phone number or email), which Apple uses to deliver the invitation. PinTrace never publishes anyone's name: members appear as the phone number or email you invited them with, or a name you give them, which is stored only on your device.</li>
   <li>Shared data uses your iCloud storage and is covered by Apple's privacy policy.</li>
@@ -128,7 +130,7 @@
 <p>PinTrace only asks for add-only access to save exported scorecard images. It never reads your photos.</p>
 
 <h2>7. PinTrace Coach</h2>
-<p>Review and practice suggestions are calculated on your device by the app's own statistics rules. No AI model is used, and your data is never sent to any server.</p>
+<p>Review, practice suggestions and the training-effect verdict are calculated on your device by the app's own statistics rules. No AI model is used and nothing is sent to any server. Material leaves the app only when you yourself use Ask AI or the weekly check-in described in section 8.</p>
 
 <h2>8. Ask AI</h2>
 <p>Ask AI assembles the relevant data into text on your device (your question and the statistics for the chosen range, with no names, course names or locations). The text leaves the app only in two ways:</p>
@@ -136,11 +138,13 @@
   <li><strong>Copy or Share</strong>: you tap Copy or Share and paste or send it yourself to an AI service of your choice.</li>
   <li><strong>Ask in the app</strong>: if you add your own AI service key in Settings › Coach › Ask AI · Answers in the app (DeepSeek is supported today), tapping Ask in the app sends the text straight from this device to that service with your key, and the answer appears in the app. You are asked for consent before the first send. After you have consented, the app may first send your question alone once to the same service, to choose which statistics to include. The key is kept only in this device's keychain and is not synced to iCloud; you can delete the key or withdraw consent at any time.</li>
 </ul>
+<p><strong>Weekly check-in</strong>: the Weekly check-in on the training card works in the same two ways. It assembles a weekly training document: your training focus, that week's practice and skill-test results, the app's training-effect verdict and the week's statistics, with no names, course names, locations or notes you wrote. It is sent only when you tap it; the app never sends it on its own. Before the first time this kind of training material is sent you are asked for consent separately; earlier consent to Ask AI does not count. Without a key the app only offers Copy, and you paste it into an AI yourself. The next-week plan an AI suggests is saved only when you tap Apply, and only on this device.</p>
 <p>Either way, the material and the answer pass only between you and the AI service you chose, whose privacy policy applies. PinTrace has no server and never receives or stores them. PinTrace never sends the material anywhere on its own. AI answers can be wrong and never change your records.</p>
 
 <h2>9. Exporting and deleting data</h2>
 <ul>
   <li>Deleting a tournament, round or course in the app deletes it from your device and your private iCloud.</li>
+  <li>Training records (focus, practice sessions, skill tests) cannot be deleted one by one in the app. To delete their iCloud copy, delete PinTrace's iCloud data as described below.</li>
   <li>Settings › Data lets you export your on-device data as JSON.</li>
   <li>Deleting the app removes all data on the device. To delete the iCloud copy, go to iOS Settings › [your name] › iCloud › Manage Account Storage, find PinTrace (旗迹) and delete its data.</li>
 </ul>
