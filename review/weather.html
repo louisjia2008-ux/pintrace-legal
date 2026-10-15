@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>WeatherKit Attribution</title>
+<meta name="description" content="Screen recording for App Review: where PinTrace shows the Apple Weather attribution">
+<link rel="stylesheet" href="../style.css">
+<style>
+  video { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--rule); background: #000; }
+  ol li { margin: .5em 0; }
+  .time { font-variant-numeric: tabular-nums; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="brand">旗迹 PinTrace</div>
+  <h1>WeatherKit attribution — screen recording</h1>
+  <p>Recorded on a physical iPad running PinTrace 1.0 (33), the build submitted for review. The app's language is Chinese; the times below show where the Apple Weather mark and the legal link appear.</p>
+</header>
+
+<video src="weather-attribution.mp4" controls playsinline preload="metadata"></video>
+
+<h2>Where WeatherKit data appears</h2>
+<p>Every place that shows WeatherKit data shows the Apple Weather trademark (the Apple logo followed by “Weather”) with a link to <a href="https://weatherkit.apple.com/legal-attribution.html">the legal attribution page</a> (link text: “天气数据来源与法律声明”, “Weather data sources and legal”).</p>
+<ol>
+  <li><span class="time">0:17</span> New round screen: the weather card shows the reading, the Apple Weather mark and the legal link.</li>
+  <li><span class="time">0:22</span> Tapping the legal link opens Apple's WeatherKit data sources and legal page.</li>
+  <li><span class="time">0:33</span> Scoring screen: the weather strip shows the same mark and link.</li>
+  <li><span class="time">0:37</span> Hole weather sheet (tap the strip): the mark and link at the bottom of the sheet.</li>
+</ol>
+<p class="muted">Weather is fetched after the player allows location access while creating a round. Without weather data, no weather or attribution is shown.</p>
+
+<footer>Apple Weather is a trademark of Apple Inc.</footer>
+</main>
+</body>
+</html>
