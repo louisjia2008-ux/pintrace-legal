@@ -12,16 +12,16 @@
 <header>
   <div class="brand">旗迹 PinTrace</div>
   <h1>隐私政策</h1>
-  <p class="muted">生效日期：2026 年 10 月 18 日 · <a href="#en">English version below</a></p>
+  <p class="muted">生效日期：2026 年 10 月 ??（1.5.0 提交当天填写） · <a href="#en">English version below</a></p>
   <nav><a href="./">支持与反馈</a><a href="https://louisjia2008-ux.github.io/pintrace/">项目介绍</a></nav>
 </header>
 
 <div class="card">
   <h2>概要</h2>
   <ul>
-    <li>旗迹没有自己的账号系统，也没有开发者自己的服务器。和家人或教练共享使用的是 Apple 的 iCloud 共享。</li>
+    <li>旗迹没有自己的账号系统。和家人或教练共享使用的是 Apple 的 iCloud 共享。开发者唯一的服务器只用于旗迹 AI 订阅（第 9 节），只转发、不保存你的问题和回答。</li>
     <li>你的高尔夫数据保存在你的设备上；如果你登录了 iCloud，还会同步到你自己的 iCloud 私有空间，开发者无法查看。</li>
-    <li>开发者不收集、不出售你的任何数据，也不把它提供给任何第三方，不做广告、不做用户追踪，也不包含任何第三方分析或广告 SDK。只有你自己选择共享给家人或教练、把资料复制给 AI，或在问 AI 里用自己的 key 发送给 AI 服务时，数据才会给到别人。</li>
+    <li>开发者不出售你的数据，不做广告、不做用户追踪，也不包含任何第三方分析或广告 SDK。只有你自己选择共享给家人或教练、把资料复制给 AI、在问 AI 里用自己的 key 发送，或用旗迹 AI 订阅提问时，数据才会离开你的设备和你的 iCloud。</li>
   </ul>
 </div>
 
@@ -58,29 +58,46 @@
 <p>复盘、训练建议和训练效果判断由 App 内的统计规则在你的设备上计算，不使用 AI 模型，也不会把数据发送到任何服务器。只有你自己使用第 8 节的问 AI 或每周回顾时，资料才会离开 App。</p>
 
 <h2>8. 问 AI</h2>
-<p>问 AI 会在你的设备上把相关数据整理成一段文字（你的问题和所选范围的统计，不含姓名、球场名和位置）。这段文字只在以下两种情况下离开 App：</p>
+<p>问 AI 会在你的设备上把相关数据整理成一段文字（你的问题和所选范围的统计，不含姓名、球场名和位置）。这段文字只在以下三种情况下离开 App：</p>
 <ul>
   <li><strong>复制或分享</strong>：你点「复制」或「分享」后，由你自己粘贴或发送给你选择的 AI 服务。</li>
   <li><strong>在 App 里问</strong>：如果你在 设置 › Coach › 问 AI · App 内回答 里填入自己的 AI 服务 key（目前支持 DeepSeek），点「在 App 里问」后，这段文字会用你的 key 从这台设备直接发送给该服务，回答显示在 App 里。第一次发送前会征得你的同意。同意之后，为了选对要带的统计，App 可能先把你的问题单独发给同一个服务一次。key 只保存在这台设备的钥匙串里，不同步到 iCloud；你可以随时删除 key 或撤回同意。</li>
+  <li><strong>用旗迹 AI 问</strong>：订阅旗迹 AI 后（第 9 节），点「在 App 里问」时，这段文字从你的设备发送到旗迹的服务器，由服务器转发给 DeepSeek，回答再原样传回 App。第一次这样发送前会征得你的同意。和用自己的 key 一样，App 可能先把你的问题单独发一次，用来选对要带的统计。</li>
 </ul>
-<p><strong>每周回顾</strong>：训练卡上的「每周回顾」按同样的两种方式工作，整理的是一份每周训练资料：训练重点、这一周的练习与技能测试结果、App 的训练效果判断和当周统计，不含姓名、球场名、位置和你写的备注。只有你点了它才会发送，App 不会自动发送。第一次发送这类训练资料前会单独征得你的同意，之前对问 AI 的同意不算在内。没有填 key 时只提供复制，由你自己粘贴给 AI。AI 给出的下一周计划只有在你点「应用」后才会保存，并且只保存在这台设备上。</p>
-<p>两种情况下，资料和回答都只在你和你选择的 AI 服务之间传递，适用该服务的隐私政策；旗迹没有服务器，不经手、不保存。旗迹不会自动把资料发送到任何地方。AI 的回答可能出错，也不会改动你的记录。</p>
+<p><strong>每周回顾</strong>：训练卡上的「每周回顾」按同样的两种方式工作，整理的是一份每周训练资料：训练重点、这一周的练习与技能测试结果、App 的训练效果判断和当周统计，不含姓名、球场名、位置和你写的备注。只有你点了它才会发送，App 不会自动发送。第一次发送这类训练资料前会单独征得你的同意，之前对问 AI 的同意不算在内。没有 key 也没有订阅时只提供复制，由你自己粘贴给 AI。AI 给出的下一周计划只有在你点「应用」后才会保存，并且只保存在这台设备上。</p>
+<p>复制和用自己的 key 时，资料和回答只在你和你选择的 AI 服务之间传递，旗迹不经手。用旗迹 AI 时，资料和回答经过旗迹的服务器：服务器只在转发过程中处理它们，不保存、不记录内容，也没有开启请求日志。三种情况下，AI 服务（用旗迹 AI 时是 DeepSeek）都按它自己的隐私政策处理收到的内容。旗迹不会自动把资料发送到任何地方。AI 的回答可能出错，也不会改动你的记录。</p>
 
-<h2>9. 数据的导出与删除</h2>
+<h2>9. 旗迹 AI 订阅</h2>
+<p>旗迹 AI 是自动续期订阅，在中国大陆 App Store 不提供。付款、续订、退款都由 Apple 通过 App Store 处理，开发者拿不到你的付款信息、姓名或 Apple ID。</p>
+<ul>
+  <li><strong>服务器保存什么</strong>：为了确认订阅有效和计算每月次数，App 会把 Apple 签名的订阅凭证发给旗迹的服务器（运行在 Cloudflare 上），Apple 也会把续订、过期、退款等状态变化通知服务器。服务器保存不含内容的使用记录：订阅交易编号、订阅状态和到期时间、App Store 国家或地区、每个计费周期已用的次数，以及每次提问的时间和完成状态。这些记录不含你的名字、Apple ID、问题、资料或回答，目前没有自动删除的期限。</li>
+  <li><strong>不保存什么</strong>：问题、发给 AI 的资料和 AI 的回答都不保存，服务器也不开启请求日志。</li>
+  <li><strong>管理与取消</strong>：在 iOS 设置 › [你的名字] › 订阅 中管理或取消。取消后，旗迹 AI 在当期结束后停止，复制和用自己的 key 照常可用。</li>
+</ul>
+
+<h2>10. 历史回答</h2>
+<p>App 里得到的完整 AI 回答会保存为历史回答，包括用自己的 key、用旗迹 AI、每周回顾，以及你粘贴回来导入训练计划的文字。没答完、出错或被你停止的回答不保存。每条记录包含问题、回答正文、时间、数据范围、回答来源，以及提问时 App 算出的回答依据；不保存发给 AI 的整份资料。</p>
+<ul>
+  <li>历史回答保存在本机；如果登录了 iCloud，会同步到你 iCloud 私有数据库中的一个单独区域。这个区域<strong>不共享</strong>给家人或教练，即使你共享了其他旗迹数据，对方也看不到你的历史回答。开发者看不到其中的内容。</li>
+  <li>在 问 AI › 历史回答 中可以逐条删除，也可以全部删除；设置 › 数据与同步 › AI 回答历史 也能进入。删除后，回答从你的设备和 iCloud 中移除，不会在其他设备上恢复。</li>
+</ul>
+
+<h2>11. 数据的导出与删除</h2>
 <ul>
   <li>在 App 中删除赛事、轮次或球场，会同时从你的设备和 iCloud 私有空间中删除。</li>
   <li>训练记录（训练重点、练习、技能测试）不能在 App 里逐条删除。要删除它们在 iCloud 中的副本，请按下面的方法删除旗迹在 iCloud 的数据。</li>
+  <li>历史回答可以逐条或全部删除，见第 10 节。</li>
   <li>在 设置 › 数据 中可以导出本机数据（JSON）。</li>
   <li>删除 App 会删除本机上的全部数据。要删除 iCloud 中的副本，请前往 iOS 设置 › [你的名字] › iCloud › 管理账户储存空间，找到「旗迹」并删除数据。</li>
 </ul>
 
-<h2>10. 儿童</h2>
-<p>旗迹不向任何人收集个人信息，包括儿童。孩子可以把自己的数据共享给家长代记，数据仍保存在孩子自己的 iCloud 中。</p>
+<h2>12. 儿童</h2>
+<p>旗迹不收集任何人的姓名、联系方式等个人信息，包括儿童。孩子可以把自己的数据共享给家长代记，数据仍保存在孩子自己的 iCloud 中。</p>
 
-<h2>11. 政策变更</h2>
-<p>本政策适用于当前版本的旗迹。将来如果加入账号、云端功能或其他需要处理你数据的服务，我们会在功能上线前更新本政策，并在 App 内说明、征得你的同意。</p>
+<h2>13. 政策变更</h2>
+<p>本政策适用于当前版本的旗迹。将来如果改变处理你数据的方式，或加入新的需要处理你数据的服务，我们会在上线前更新本政策，并在 App 内说明、征得你的同意。</p>
 
-<h2>12. 联系我们</h2>
+<h2>14. 联系我们</h2>
 <p>如有任何隐私问题，请发邮件至 <a href="mailto:louisjia2006@gmail.com">louisjia2006@gmail.com</a>。</p>
 
 <hr id="en">
@@ -88,15 +105,15 @@
 <header>
   <div class="brand">PinTrace (旗迹)</div>
   <h1>Privacy Policy</h1>
-  <p class="muted">Effective date: October 18, 2026</p>
+  <p class="muted">Effective date: October ??, 2026 (fill in on the 1.5.0 submission day)</p>
 </header>
 
 <div class="card">
   <h2>Summary</h2>
   <ul>
-    <li>PinTrace has no accounts of its own and no servers operated by the developer. Sharing with family or a coach uses Apple's iCloud sharing.</li>
+    <li>PinTrace has no accounts of its own. Sharing with family or a coach uses Apple's iCloud sharing. The developer's only server is used for the PinTrace AI subscription (section 9); it forwards your questions and answers and never stores them.</li>
     <li>Your golf data is stored on your device. If you are signed in to iCloud, it also syncs to your own private iCloud storage, which the developer cannot access.</li>
-    <li>The developer does not collect or sell any of your data or give it to any third party, shows no ads, does not track you, and uses no third-party analytics or advertising SDKs. Your data reaches other people only when you choose to share it with family or a coach, copy it to an AI yourself, or send it to an AI service from Ask AI with your own key.</li>
+    <li>The developer does not sell your data, shows no ads, does not track you, and uses no third-party analytics or advertising SDKs. Your data leaves your devices and your iCloud only when you choose to share it with family or a coach, copy it to an AI yourself, send it from Ask AI with your own key, or ask with a PinTrace AI subscription.</li>
   </ul>
 </div>
 
@@ -133,29 +150,46 @@
 <p>Review, practice suggestions and the training-effect verdict are calculated on your device by the app's own statistics rules. No AI model is used and nothing is sent to any server. Material leaves the app only when you yourself use Ask AI or the weekly check-in described in section 8.</p>
 
 <h2>8. Ask AI</h2>
-<p>Ask AI assembles the relevant data into text on your device (your question and the statistics for the chosen range, with no names, course names or locations). The text leaves the app only in two ways:</p>
+<p>Ask AI assembles the relevant data into text on your device (your question and the statistics for the chosen range, with no names, course names or locations). The text leaves the app only in three ways:</p>
 <ul>
   <li><strong>Copy or Share</strong>: you tap Copy or Share and paste or send it yourself to an AI service of your choice.</li>
   <li><strong>Ask in the app</strong>: if you add your own AI service key in Settings › Coach › Ask AI · Answers in the app (DeepSeek is supported today), tapping Ask in the app sends the text straight from this device to that service with your key, and the answer appears in the app. You are asked for consent before the first send. After you have consented, the app may first send your question alone once to the same service, to choose which statistics to include. The key is kept only in this device's keychain and is not synced to iCloud; you can delete the key or withdraw consent at any time.</li>
+  <li><strong>Ask with PinTrace AI</strong>: with a PinTrace AI subscription (section 9), tapping Ask in the app sends the text from your device to PinTrace's server, which forwards it to DeepSeek and passes the answer back to the app unchanged. You are asked for consent before the first send. As with your own key, the app may first send your question alone once, to choose which statistics to include.</li>
 </ul>
-<p><strong>Weekly check-in</strong>: the Weekly check-in on the training card works in the same two ways. It assembles a weekly training document: your training focus, that week's practice and skill-test results, the app's training-effect verdict and the week's statistics, with no names, course names, locations or notes you wrote. It is sent only when you tap it; the app never sends it on its own. Before the first time this kind of training material is sent you are asked for consent separately; earlier consent to Ask AI does not count. Without a key the app only offers Copy, and you paste it into an AI yourself. The next-week plan an AI suggests is saved only when you tap Apply, and only on this device.</p>
-<p>Either way, the material and the answer pass only between you and the AI service you chose, whose privacy policy applies. PinTrace has no server and never receives or stores them. PinTrace never sends the material anywhere on its own. AI answers can be wrong and never change your records.</p>
+<p><strong>Weekly check-in</strong>: the Weekly check-in on the training card works in the same two ways. It assembles a weekly training document: your training focus, that week's practice and skill-test results, the app's training-effect verdict and the week's statistics, with no names, course names, locations or notes you wrote. It is sent only when you tap it; the app never sends it on its own. Before the first time this kind of training material is sent you are asked for consent separately; earlier consent to Ask AI does not count. Without a key or a subscription the app only offers Copy, and you paste it into an AI yourself. The next-week plan an AI suggests is saved only when you tap Apply, and only on this device.</p>
+<p>With Copy or your own key, the material and the answer pass only between you and the AI service you chose; PinTrace never receives them. With PinTrace AI they pass through PinTrace's server, which handles them only while forwarding, does not store or log their content, and has request logging turned off. In every case the AI service (DeepSeek, for PinTrace AI) handles what it receives under its own privacy policy. PinTrace never sends the material anywhere on its own. AI answers can be wrong and never change your records.</p>
 
-<h2>9. Exporting and deleting data</h2>
+<h2>9. PinTrace AI subscription</h2>
+<p>PinTrace AI is an auto-renewable subscription. It is not offered on the China mainland App Store. Apple handles payment, renewal and refunds through the App Store; the developer never receives your payment details, name or Apple ID.</p>
+<ul>
+  <li><strong>What the server keeps</strong>: to confirm your subscription and count your monthly questions, the app sends Apple's signed subscription proof to PinTrace's server (which runs on Cloudflare), and Apple notifies the server of renewals, expiry and refunds. The server keeps content-free usage records: the subscription transaction ID, subscription status and expiry, App Store country or region, the number of questions used in each billing period, and the time and completion status of each question. These records contain no name, Apple ID, question, material or answer. There is currently no automatic deletion period for them.</li>
+  <li><strong>What it does not keep</strong>: questions, the material sent to the AI and the AI's answers are never stored, and request logging is off.</li>
+  <li><strong>Managing and cancelling</strong>: manage or cancel in iOS Settings › [your name] › Subscriptions. After you cancel, PinTrace AI stops at the end of the current period; Copy and your own key keep working.</li>
+</ul>
+
+<h2>10. Answer history</h2>
+<p>Every complete AI answer you get in the app is saved to your answer history: answers with your own key, with PinTrace AI, weekly check-ins, and text you paste back to import a training plan. Unfinished answers, errors and answers you stopped are not saved. Each entry holds the question, the answer text, the time, the data range, where the answer came from, and the evidence line the app calculated when you asked. The full material sent to the AI is not saved.</p>
+<ul>
+  <li>Answer history is stored on your device and, if you are signed in to iCloud, synced to a separate area of your private iCloud database. That area is <strong>never shared</strong> with family or a coach: even if you share your other PinTrace data, they cannot see your answer history. The developer cannot see it either.</li>
+  <li>You can delete answers one at a time or all at once in Ask AI › Answer history, also reachable from Settings › Data &amp; Sync › AI answer history. Deleted answers are removed from your devices and iCloud and do not come back on other devices.</li>
+</ul>
+
+<h2>11. Exporting and deleting data</h2>
 <ul>
   <li>Deleting a tournament, round or course in the app deletes it from your device and your private iCloud.</li>
   <li>Training records (focus, practice sessions, skill tests) cannot be deleted one by one in the app. To delete their iCloud copy, delete PinTrace's iCloud data as described below.</li>
+  <li>Answer history can be deleted one answer at a time or all at once; see section 10.</li>
   <li>Settings › Data lets you export your on-device data as JSON.</li>
   <li>Deleting the app removes all data on the device. To delete the iCloud copy, go to iOS Settings › [your name] › iCloud › Manage Account Storage, find PinTrace (旗迹) and delete its data.</li>
 </ul>
 
-<h2>10. Children</h2>
-<p>PinTrace does not collect personal information from anyone, including children. A child can share their own data with a parent who scores for them; it stays in the child's own iCloud.</p>
+<h2>12. Children</h2>
+<p>PinTrace does not collect names, contact details or other personal information from anyone, including children. A child can share their own data with a parent who scores for them; it stays in the child's own iCloud.</p>
 
-<h2>11. Changes</h2>
-<p>This policy covers the current version of PinTrace. If a future version adds accounts, cloud features or any other service that processes your data, we will update this policy before that feature ships, and explain it and ask for your consent in the app.</p>
+<h2>13. Changes</h2>
+<p>This policy covers the current version of PinTrace. If we change how your data is handled, or add another service that processes it, we will update this policy before the change ships, and explain it and ask for your consent in the app.</p>
 
-<h2>12. Contact</h2>
+<h2>14. Contact</h2>
 <p>For any privacy question, email <a href="mailto:louisjia2006@gmail.com">louisjia2006@gmail.com</a>.</p>
 
 <footer>© 2026 旗迹 PinTrace</footer>
